@@ -49,13 +49,3 @@ blocks:
         - name: "\U0001F7E2 Pytest"
           commands:
             - make test
-  - name: Build
-    dependencies:
-      - "\U0001F50D Code Quality"
-      - "\U0001F9EA Test Suite"
-    task:
-      jobs:
-        - name: Build wheel
-          commands:
-            - make build
-            - artifact push workflow dist
