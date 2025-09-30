@@ -2,8 +2,8 @@ version: v1.0
 name: "\U0001F40D Python CI Pipeline"
 agent:
   machine:
-    type: f1
-    os_image: ''
+    type: f1-standard-2
+    os_image: ubuntu2004
 global_job_config:
   prologue:
     commands:
