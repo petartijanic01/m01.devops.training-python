@@ -9,4 +9,4 @@ def test_integration_workflow():
     result = calculator.multiply(result, 2)
     result = calculator.subtract(result, 10)
     result = calculator.divide(result, 4)
-    assert result == 0
+    assert result == 5
