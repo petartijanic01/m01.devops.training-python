@@ -2,22 +2,12 @@ version: v1.0
 name: "\U0001F40D Python CI Pipeline"
 agent:
   machine:
-    type: s1-kubernetes
+    type: f1
     os_image: ''
-  containers:
-    - name: main
-      image: 'registry.semaphoreci.com/python:3.12'
-fail_fast:
-  stop:
-    when: branch != 'main'
-auto_cancel:
-  running:
-    when: branch != 'main'
-  queued:
-    when: branch = 'main'
 global_job_config:
   prologue:
     commands:
+      - sem-version python 3.12
       - checkout
       - python -m venv venv
       - source venv/bin/activate
