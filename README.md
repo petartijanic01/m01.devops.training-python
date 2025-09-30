@@ -41,7 +41,7 @@ source venv/bin/activate
 ## Project structure
 
 ```text
-ci_cd_demo_project/
+/
 ├── .gitignore
 ├── Makefile
 ├── README.md
@@ -66,7 +66,3 @@ ci_cd_demo_project/
 6. Commit and push the change to your repository
 7. Discuss why the pipeline is failing
 8. Fix the pipeline
-
-## Tips
-
-The `solution` branch has the solved pipeline. You can check it out to compare with your solution.
