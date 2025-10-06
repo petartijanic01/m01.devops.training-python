@@ -13,7 +13,7 @@ global_job_config:
       - cache restore
       - pip install --cache-dir .pip_cache -r requirements.txt
 blocks:
-  - name: "\U0001F6E0️ Setup and Cache"
+  - name: "\U0001F6E0️ Setup and Cache!"
     dependencies: []
     task:
       jobs:
@@ -22,7 +22,7 @@ blocks:
             - cache store
   - name: "\U0001F50D Code Quality"
     dependencies:
-      - "\U0001F6E0️ Setup and Cache"
+      - "\U0001F6E0️ Setup and Cache!"
     task:
       jobs:
         - name: ✨ Lint and Format
@@ -30,7 +30,7 @@ blocks:
             - make lint
   - name: "\U0001F9EA Test Suite"
     dependencies:
-      - "\U0001F6E0️ Setup and Cache"
+      - "\U0001F6E0️ Setup and Cache!"
     task:
       env_vars: []
       jobs:
